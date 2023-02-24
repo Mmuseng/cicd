@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 env:
-  S3_BUCKET_NAME: logging-system-deploy
+  S3_BUCKET_NAME: mj-logging-system-deploy #내 s3버킷 이름
   PROJECT_NAME: playground-logging
 
 jobs:
