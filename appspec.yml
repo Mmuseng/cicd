@@ -1,14 +1,15 @@
 # appspec.yml
 
 version: 0.0
-os: ubuntu
+os: linux
+
 files:
   - source: /
-    destination: /home/ubuntu/playground-logging/ # 프로젝트 이름
+    destination: /home/ubuntu/playground-logging # 프로젝트 이름
     overwrite: yes
 
-permissions:
-  - object: /
-    pattern: "**"
+permissions: #권한 허용
+  - object: /home/ubuntu/playground-logging/
     owner: ubuntu
     group: ubuntu
+    mode: 755
